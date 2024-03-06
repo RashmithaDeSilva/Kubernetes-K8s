@@ -22,3 +22,14 @@ kubectl get nodes -A
 * Responsible for running pods, which are the smallest deployable units in Kubernetes.
 * Provides the necessary runtime environment for containers, such as networking and storage.
 * Nodes work together to form a distributed and scalable Kubernetes cluster.
+
+#### Namespace
+~~~k8s
+kubectl get namespaces
+kubectl get namespaces -A
+kubectl get ns
+kubectl get ns -A
+~~~
+*  Provide a way to partition and isolate resources within a Kubernetes cluster.
+* Prevent naming conflicts between different applications or teams.
+* Enable multiple users or teams to share the same cluster without interfering with each other's resources.
