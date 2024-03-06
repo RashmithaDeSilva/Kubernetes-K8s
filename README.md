@@ -33,3 +33,25 @@ kubectl get ns -A
 *  Provide a way to partition and isolate resources within a Kubernetes cluster.
 * Prevent naming conflicts between different applications or teams.
 * Enable multiple users or teams to share the same cluster without interfering with each other's resources.
+
+#### Pod
+~~~k8s
+# Show default namespase pods
+kubectl get pods
+
+# Show all namespases pods
+kubectl get pods -A
+kubectl get pods --all-namespaces
+
+# Show specific namespace pods
+kubectl get pods --namespace=<namespace-name>
+
+# Show with additional information
+kubectl get pods -o wide
+kubectl get pods --namespace=<namespace-name> -o wide
+
+~~~
+* Smallest deployable unit in Kubernetes.
+* Can contain one or more tightly coupled containers that share the same network namespace.
+* Represents a single instance of a running process or application.
+* Acts as the basic building block for deploying and managing applications in Kubernetes.
