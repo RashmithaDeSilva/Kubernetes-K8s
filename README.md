@@ -55,3 +55,16 @@ kubectl get pods --namespace=<namespace-name> -o wide
 * Can contain one or more tightly coupled containers that share the same network namespace.
 * Represents a single instance of a running process or application.
 * Acts as the basic building block for deploying and managing applications in Kubernetes.
+
+#### Service
+~~~k8s
+kubectl get services
+kubectl get services -A
+~~~
+* An abstraction that defines a logical set of Pods.
+* Acts as a stable endpoint for accessing the functionality provided by those Pods.
+* Enables communication and discovery between different parts of an application or between different applications.
+* Supports load balancing and abstracts the underlying network details.
+* Allows applications to scale and evolve independently while maintaining a consistent way to access their components.
+___
+
