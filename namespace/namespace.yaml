@@ -1,0 +1,19 @@
+---
+# Create single namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: development
+
+---
+# Create multiple namespace
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: production 
+
+# ---
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: testing

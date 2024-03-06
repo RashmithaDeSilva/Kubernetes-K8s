@@ -3,7 +3,7 @@
 ### Basic informations
 
 #### Claster
-~~~k8s
+~~~sh
 kubectl cluster-info
 ~~~
 * A collection of nodes (machines) that work together to run containerized applications.
@@ -13,7 +13,7 @@ kubectl cluster-info
 * Enables efficient resource utilization and workload distribution across the nodes in the cluster.
 
 #### Node
-~~~k8s
+~~~sh
 kubectl get nodes
 kubectl get nodes -A
 ~~~
@@ -24,7 +24,7 @@ kubectl get nodes -A
 * Nodes work together to form a distributed and scalable Kubernetes cluster.
 
 #### Namespace
-~~~k8s
+~~~sh
 kubectl get namespaces
 kubectl get namespaces -A
 kubectl get ns
@@ -35,7 +35,7 @@ kubectl get ns -A
 * Enable multiple users or teams to share the same cluster without interfering with each other's resources.
 
 #### Pod
-~~~k8s
+~~~sh
 # Show default namespase pods
 kubectl get pods
 
@@ -57,7 +57,7 @@ kubectl get pods --namespace=<namespace-name> -o wide
 * Acts as the basic building block for deploying and managing applications in Kubernetes.
 
 #### Service
-~~~k8s
+~~~sh
 kubectl get services
 kubectl get services -A
 ~~~
