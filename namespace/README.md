@@ -10,7 +10,8 @@ kubectl create -f namespace.yaml
 ~~~sh
 kubectl apply -f namespace.yaml
 ~~~
-* This will apply changes into already created namespace also it can be use into create namespace
+* This will apply changes into already created namespace and also it can be use into create namespace
+* User "apply" for best practices
 
 #### Delete
 ~~~sh

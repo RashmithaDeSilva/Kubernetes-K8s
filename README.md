@@ -45,10 +45,12 @@ kubectl get pods --all-namespaces
 
 # Show specific namespace pods
 kubectl get pods --namespace=<namespace-name>
+kubectl get pods -n <namespace-name>
 
 # Show with additional information
 kubectl get pods -o wide
 kubectl get pods --namespace=<namespace-name> -o wide
+kubectl get pods -n <namespace-name> -o wide
 
 ~~~
 * Smallest deployable unit in Kubernetes.
@@ -66,5 +68,3 @@ kubectl get services -A
 * Enables communication and discovery between different parts of an application or between different applications.
 * Supports load balancing and abstracts the underlying network details.
 * Allows applications to scale and evolve independently while maintaining a consistent way to access their components.
-___
-
