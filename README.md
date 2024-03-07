@@ -75,3 +75,25 @@ kubectl get services -n <namespace> -o wide
 * Enables communication and discovery between different parts of an application or between different applications.
 * Supports load balancing and abstracts the underlying network details.
 * Allows applications to scale and evolve independently while maintaining a consistent way to access their components.
+
+#### Remove Files
+~~~sh
+kubctl delete -f <file_name.yaml>
+~~~
+* This can be delete created resistors using this file
+
+#### Minikube
+~~~sh
+minikube start
+minikube delete
+~~~
+* A tool for running Kubernetes clusters locally on a developer's machine.
+* Provides a single-node Kubernetes cluster in a virtual machine.
+* Enables developers to experiment with Kubernetes features and test applications in a local environment.
+* Useful for learning, development, and testing purposes without the need for a full-scale production-like cluster.
+* Supports various hypervisors, such as VirtualBox, Hyper-V, and KVM, to create the virtual machine.
+
+#### Kubernetes API Server
+~~~sh
+kubectl api-resources
+~~~
