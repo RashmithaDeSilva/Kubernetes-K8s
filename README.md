@@ -49,11 +49,11 @@ kubectl get pods -n <namespace-name>
 
 # Show additional information
 kubectl get pods -o wide
-kubectl get pods --namespace=<namespace-name> -o wide
 kubectl get pods -n <namespace-name> -o wide
 
 # Get logs and more infomations
 kubectl describe pod <pod_name> -n <namespace>
+kubectl logs <pod_name> -n <namespace>
 
 # Log in to pod
 kubectl exec -it <pod_name> <sell_name>
@@ -67,6 +67,8 @@ kubectl exec -it <pod_name> <sell_name>
 ~~~sh
 kubectl get services
 kubectl get services -A
+kubectl get services -n <namespace>
+kubectl get services -n <namespace> -o wide
 ~~~
 * An abstraction that defines a logical set of Pods.
 * Acts as a stable endpoint for accessing the functionality provided by those Pods.
