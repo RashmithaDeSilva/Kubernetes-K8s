@@ -47,11 +47,16 @@ kubectl get pods --all-namespaces
 kubectl get pods --namespace=<namespace-name>
 kubectl get pods -n <namespace-name>
 
-# Show with additional information
+# Show additional information
 kubectl get pods -o wide
 kubectl get pods --namespace=<namespace-name> -o wide
 kubectl get pods -n <namespace-name> -o wide
 
+# Get logs and more infomations
+kubectl describe pod <pod_name> -n <namespace>
+
+# Log in to pod
+kubectl exec -it <pod_name> <sell_name>
 ~~~
 * Smallest deployable unit in Kubernetes.
 * Can contain one or more tightly coupled containers that share the same network namespace.
